@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.posterImage{
+    height: 600px;
+}
+
+.posterImage > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.posterImage__overlay {
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s;
+}   
+
+.posterImage__overlay:hover {
+    opacity: 1;
+}
+
+.posterImage__title {
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.posterImage__runtime {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.posterImage__rating {
+    margin-left: 3rem;
+}
+
+.posterImage__description {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+}
+.popularCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+  
+}
+.popularCard{
+    margin: 5px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    transition: transform .2s;
+}
+
+.popularCard:hover{
+    transform: scale(1.2);
+    z-index: 4;
+}
+
+.popularImg{
+
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.info{
+    position: absolute ;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+   
+}
+
+.info:hover{
+    opacity: 1;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+.dateAndVote{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px ;
+    padding: 5px;
+}
+
+.overviev{
+    width: 260px;
+    font-style: italic;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.typeMovie{
+    margin-left: 180px;
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+
+}
