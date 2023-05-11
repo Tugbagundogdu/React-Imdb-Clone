@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react"
 import './productDetail.css'
-import { useParams } from "react-router-dom"
 import axios from "axios"
+import { useParams } from "react-router-dom"
+
+
 
 const ProductDetail = () => {
     const [currentMovieDetail, setMovie] = useState()
